@@ -6,7 +6,7 @@ from n1_rate_limit import check_rate_limit
 import os
 import httpx
 
-app = FastAPI(title="AfyaPlus Triage API (Secured)", version="1.1.0")
+app = FastAPI(title="AfyaPlus Triage API (Security Inbuilt)", version="1.1.0")
 
 LLM_GATEWAY_URL = os.environ["LLM_GATEWAY_URL"]
 
