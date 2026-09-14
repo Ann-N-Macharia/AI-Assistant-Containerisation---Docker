@@ -6,7 +6,7 @@ import bcrypt
 from fastapi import HTTPException, Depends
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 
-SECRET_KEY = os.getenv("JWT_SECRET", "dev-only-secret-please-change-me-32chars!")
+SECRET_KEY = os.getenv("JWT_SECRET")
 
 TOKEN_LIFETIME_SECONDS = 30 * 60  # 30 minutes
 
